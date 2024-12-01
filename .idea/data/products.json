@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ashwagandha-powder",
+    "name": "Ashwagandha Powder",
+    "description": "Ashwagandha helps reduce stress, boost energy, and improve focus.",
+    "image": "assets/OIG1.jpg",
+    "price": 12.99,
+    "deliveryInfo": "Free shipping on orders over $50. Standard delivery within 5-7 business days.",
+    "faqs": [
+      "Q: How should I take Ashwagandha Powder?",
+      "A: Mix one teaspoon with water or your favorite beverage daily.",
+      "Q: Is Ashwagandha safe?",
+      "A: Yes, when taken as directed. Consult with a healthcare provider if pregnant or nursing."
+    ],
+    "productCode": "SKU-AW001"
+  },
+  {
+    "id": "turmeric-extract",
+    "name": "Turmeric Extract",
+    "description": "Turmeric is known for its anti-inflammatory properties and boosting immunity.",
+    "image": "assets/OIG2.jpg",
+    "price": 8.99,
+    "deliveryInfo": "Free shipping on orders over $50. Standard delivery within 5-7 business days.",
+    "faqs": [
+      "Q: How should I take Turmeric Extract?",
+      "A: Take two capsules daily with meals.",
+      "Q: Does Turmeric Extract have any side effects?",
+      "A: Generally safe, but consult a healthcare provider if you have gallbladder issues."
+    ],
+    "productCode": "SKU-TU002"
+  },
+  {
+    "id": "herbal-tea",
+    "name": "Herbal Tea",
+    "description": "Herbal Tea provides relaxation and aids in digestion.",
+    "image": "assets/herbal_products.jpg",
+    "price": 15.49,
+    "deliveryInfo": "Free shipping on orders over $50. Standard delivery within 5-7 business days.",
+    "faqs": [
+      "Q: How many cups of Herbal Tea should I drink daily?",
+      "A: Enjoy 2-3 cups per day for optimal benefits.",
+      "Q: Is Herbal Tea caffeine-free?",
+      "A: Yes, our Herbal Tea is naturally caffeine-free."
+    ],
+    "productCode": "SKU-HT003"
+  }
+]

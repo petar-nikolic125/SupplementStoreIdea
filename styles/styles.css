@@ -1,0 +1,330 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #121212;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a {
+    color: #00b894;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Navigation Bar */
+header {
+    background-color: #1e1e1e;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #00b894;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links li a {
+    font-weight: bold;
+}
+
+/* Main Layout */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Sidebar + Content Area */
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Categories Sidebar */
+.categories-sidebar {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.categories-sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.categories-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.categories-sidebar ul li {
+    margin: 0.5rem 0;
+}
+
+.categories-sidebar ul li a {
+    text-decoration: none;
+    color: #00b894;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.categories-sidebar ul li a:hover {
+    color: #019874;
+    text-decoration: underline;
+}
+
+/* Search Bar Container */
+.search-bar-container {
+    display: flex;
+    justify-content: flex-start; /* Align horizontally with sidebar */
+    align-items: center;
+    height: auto; /* Adjust height to align with sidebar */
+    margin-bottom: 2rem;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+    width: 100%;
+    max-width: 800px; /* Limit search bar width */
+}
+
+/* Label Styling */
+.search-label {
+    font-size: 1.2rem;
+    color: #fff;
+    display: none; /* Hidden label for screen readers */
+}
+
+/* Input Field Styling */
+#searchInput {
+    width: 50%;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: #00b894;
+    box-shadow: 0 0 5px #00b894;
+}
+
+/* Button Styling */
+.search-btn {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-btn:hover {
+    background-color: #019874;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.search-btn:active {
+    background-color: #016b56;
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+/* Product Grid */
+.product-grid {
+    padding: 2rem;
+}
+
+.product-grid h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.product-card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #00b894;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart {
+    background-color: #00b894;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #019874;
+}
+
+/* Single Product View */
+.hidden {
+    display: none !important;
+}
+
+.single-product {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+}
+
+.single-product .product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-product img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.single-product .details {
+    max-width: 500px;
+    text-align: center;
+}
+
+.single-product h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.single-product p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.back-btn {
+    margin-bottom: 2rem;
+    background: none;
+    color: #00b894;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.back-btn:hover {
+    color: #019874;
+}
+
+/* Extra Information Sections in Product Detail */
+.extra-info {
+    margin-top: 2rem;
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.extra-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #00b894;
+}
+
+.extra-info p, .extra-info ul {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.extra-info ul {
+    list-style: disc inside;
+    padding-left: 1rem;
+}
+
+/* Error Message Styling */
+.error-message {
+    color: #ff6b6b;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-sidebar {
+        margin-bottom: 2rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .single-product .product-details {
+        flex-direction: column;
+    }
+
+    .product-card img, .single-product img {
+        width: 100%;
+    }
+}

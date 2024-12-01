@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Herbal Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<!-- Top Navigation Bar -->
+<header>
+    <div class="navbar">
+        <h1 class="logo">Herbal Store</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">How to Order</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main-layout">
+    <!-- Categories Sidebar -->
+    <aside class="categories-sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Vitamins</a></li>
+            <li><a href="#">Minerals</a></li>
+            <li><a href="#">Herbal Extracts</a></li>
+            <li><a href="#">Teas</a></li>
+            <li><a href="#">Antioxidants</a></li>
+            <li><a href="#">Proteins</a></li>
+        </ul>
+    </aside>
+
+    <main class="content-area">
+        <!-- Single Product Detail -->
+        <section id="singleProductView" class="single-product">
+            <button class="back-btn" onclick="goBack()">← Back to Products</button>
+            <div class="product-details">
+                <img id="singleProductImage" src="" alt="Product Image">
+                <div class="details">
+                    <h2 id="singleProductTitle">Product Title</h2>
+                    <p id="singleProductDescription">Product Description</p>
+                    <p id="singleProductPrice">$0.00</p>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button class="add-to-cart">Add to Cart</button>
+
+                    <!-- Extra Sections -->
+                    <div class="extra-info">
+                        <h3>Delivery Information</h3>
+                        <p id="deliveryInfo">Loading...</p>
+
+                        <h3>FAQs</h3>
+                        <ul id="faqs">
+                            <li>Loading FAQs...</li>
+                        </ul>
+
+                        <h3>Product Code</h3>
+                        <p id="productCode">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Herbal Store. All Rights Reserved.</p>
+</footer>
+
+<!-- Include the external JavaScript file -->
+<script src="scripts/script.js" defer></script>
+<script>
+    // Function to handle the back button
+    function goBack() {
+        window.history.back();
+    }
+</script>
+</body>
+</html>

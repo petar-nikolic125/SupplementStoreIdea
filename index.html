@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<!-- Top Navigation Bar -->
+<header>
+    <div class="navbar">
+        <h1 class="logo">Herbal Store</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">How to Order</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="main-layout">
+    <!-- Categories Sidebar -->
+    <aside class="categories-sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Vitamins</a></li>
+            <li><a href="#">Minerals</a></li>
+            <li><a href="#">Herbal Extracts</a></li>
+            <li><a href="#">Teas</a></li>
+            <li><a href="#">Antioxidants</a></li>
+            <li><a href="#">Proteins</a></li>
+        </ul>
+    </aside>
+
+    <main class="content-area">
+        <!-- Search Bar -->
+        <section class="search-bar-container">
+            <form id="searchForm" class="search-bar" onsubmit="handleSearch(event)">
+                <label for="searchInput" class="search-label">Search</label>
+                <input
+                        id="searchInput"
+                        type="text"
+                        placeholder="Search herbs, vitamins, or minerals..."
+                        aria-label="Search herbs, vitamins, or minerals"
+                />
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </section>
+
+        <!-- Product Grid -->
+        <section id="productGrid" class="product-grid">
+            <h2>Featured Products</h2>
+            <div class="grid-container">
+                <!-- Product Card 1 -->
+                <div class="product-card">
+                    <a href="product-detail.html?id=ashwagandha-powder">
+                        <img src="assets/OIG1.jpg" alt="Ashwagandha Powder">
+                        <h3>Ashwagandha Powder</h3>
+                    </a>
+                    <p>$12.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card">
+                    <a href="product-detail.html?id=turmeric-extract">
+                        <img src="assets/OIG2.jpg" alt="Turmeric Extract">
+                        <h3>Turmeric Extract</h3>
+                    </a>
+                    <p>$8.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card">
+                    <a href="product-detail.html?id=herbal-tea">
+                        <img src="assets/herbal_products.jpg" alt="Herbal Tea">
+                        <h3>Herbal Tea</h3>
+                    </a>
+                    <p>$15.49</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Herbal Store. All Rights Reserved.</p>
+</footer>
+
+<!-- Include the external JavaScript file -->
+<script src="scripts/script.js" defer></script>
+</body>
+</html>
